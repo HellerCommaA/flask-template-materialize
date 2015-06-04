@@ -1,0 +1,19 @@
+{% extends "material/base.html" %}
+{% import "material/utils.html" as util %}
+{% import "material/wtf.html" as wtf %}
+
+{% block title %}Hello, world!{% endblock %}
+
+{% block content %}
+{{ container() }}
+        {{ row() }}
+                {{ col(['s12', 'm6']) }}
+                	{{ util.card('Hello world!', wtf.quick_form(form) )}}
+                {{ enddiv() }}
+                {{ col(['s12', 'm6'])}}
+                	{{ util.card('Isn\'t Flask great?', '<p>I really do enjoy it!</p>', [['https://github.com/HellerCommaA', 'My Github']])}}
+                	{{ util.card('Aren\t the aardvarks in the Alps wonderful?', '', [['#', 'Yep!'], ['#', 'Nah.']]) }}
+            	{{ enddiv() }}
+        {{ enddiv() }}
+{{ enddiv() }}
+{% endblock %}
