@@ -5,6 +5,8 @@ local/
 db_repository/
 .Python
 *.pyc
+logs.txt
+
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

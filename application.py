@@ -4,7 +4,8 @@ from forms import ExampleForm
 from flask.ext.sqlalchemy import SQLAlchemy
 
 # initializes app
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 # sets up sqlalchemy bindings for app
 db = SQLAlchemy(app)
