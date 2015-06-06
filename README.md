@@ -11,5 +11,4 @@ So, this is usually my base project that I start with.
 6. ????
 7. Profit
 
-
 `db_create.py` and the other db_ scripts are for easy creation / upgrades / downgrades / migrations of databases.  Thanks to Miguel Grinberg for those.
